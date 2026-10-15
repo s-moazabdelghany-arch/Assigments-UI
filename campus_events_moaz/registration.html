@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration | Campus Events Guide</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="index.html">Campus Events Guide</a>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html" >Home</a></li>
+        <li><a href="events.html" >Events</a></li>
+        <li><a href="event-details.html" >Event Details</a></li>
+        <li><a href="schedule.html" >Schedule</a></li>
+        <li><a href="registration.html" aria-current="page">Register</a></li>
+      </ul>
+    </nav>
+    <label class="theme-control" for="dark-mode"><input id="dark-mode" type="checkbox"> Dark mode</label>
+  </div>
+</header>
+<main>
+
+<section class="page-intro"><p class="eyebrow">Save your place</p><h1>Register for Campus Tech Day 2026</h1><p><strong>Date:</strong> 15 November 2026 · <strong>Time:</strong> 10:00 AM – 3:00 PM · <strong>Venue:</strong> University Main Hall</p></section>
+<section class="two-column">
+  <div class="form-card">
+    <h2>Attendee registration form</h2>
+    <p class="small">Fields marked required must be completed. This is a demonstration form; it does not send or store submissions.</p>
+    <form action="#" method="get">
+      <div class="form-grid">
+        <div class="form-field"><label for="attendee-name">Attendee name *</label><input id="attendee-name" name="attendee-name" type="text" required maxlength="50" pattern="[A-Za-z ]+" title="Use letters and spaces only" placeholder="Your full name"></div>
+        <div class="form-field"><label for="attendee-email">Email address *</label><input id="attendee-email" name="attendee-email" type="email" required maxlength="80" placeholder="name@example.com"></div>
+        <div class="form-field"><label for="portfolio">Portfolio or profile URL</label><input id="portfolio" name="portfolio" type="url" placeholder="https://example.com"></div>
+        <div class="form-field"><label for="guest-count">Number of guests</label><input id="guest-count" name="guest-count" type="number" min="0" max="3" value="0"></div>
+        <div class="form-field full"><label for="interest">How interested are you in technology? (1–10)</label><input id="interest" name="interest" type="range" min="1" max="10" value="7"></div>
+        <div class="form-field"><label for="arrival-date">Arrival date *</label><input id="arrival-date" name="arrival-date" type="date" required value="2026-11-15" min="2026-11-15" max="2026-11-15"></div>
+        <div class="form-field"><label for="arrival-time">Expected arrival time *</label><input id="arrival-time" name="arrival-time" type="time" required min="10:00" max="15:00" value="10:00"></div>
+        <div class="form-field"><label for="badge-color">Badge colour</label><input id="badge-color" name="badge-color" type="color" value="#2878a5"></div>
+        <div class="form-field"><label for="event-choice">Event choice *</label><select id="event-choice" name="event-choice" required><option value="">Choose one</option><option selected>Campus Tech Day 2026</option><option>Campus Music Night</option><option>Green Campus Day</option></select></div>
+        <fieldset class="form-field full"><legend>Attendance type *</legend><div class="choice-row"><label><input type="radio" name="attendance" value="student" required> Student</label><label><input type="radio" name="attendance" value="guest"> Guest</label><label><input type="radio" name="attendance" value="volunteer"> Volunteer</label></div></fieldset>
+        <fieldset class="form-field full"><legend>What would you like to see?</legend><div class="choice-row"><label><input type="checkbox" name="interest-topic" value="projects"> Student projects</label><label><input type="checkbox" name="interest-topic" value="talks"> Short talks</label><label><input type="checkbox" name="interest-topic" value="demos"> Live demos</label></div></fieldset>
+        <div class="form-field full"><label for="access-needs">Access needs or additional notes</label><textarea id="access-needs" name="access-needs" rows="4" maxlength="300" placeholder="Tell us if you need any support"></textarea></div>
+        <div class="form-field full"><label for="student-card">Student card (optional)</label><input id="student-card" name="student-card" type="file" accept="image/*,.pdf"></div>
+        <div class="form-field full"><label class="choice-row"><input type="checkbox" name="agreement" required> I confirm that the information above is correct. *</label></div>
+      </div>
+      <button class="button" type="submit">Complete registration</button>
+      <button class="button secondary" type="reset">Clear form</button>
+    </form>
+  </div>
+  <aside class="panel">
+    <h2>Event contact</h2>
+    <p><strong>Campus Events Team</strong></p>
+    <p>Email: <a href="mailto:events@example.edu">events@example.edu</a><br>Office: Student Activities Office, Main Building</p>
+    <p class="note">This is a sample student project. The form uses HTML5 validation in the browser but does not save or send your information.</p>
+    <h3>Before you register</h3>
+    <ul><li>Check the event date and venue.</li><li>Use a valid email address.</li><li>Arrive close to your selected arrival time.</li></ul>
+  </aside>
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div><strong>Campus Events Guide</strong><br><span>Discover, join, and enjoy campus life.</span></div>
+    <div><strong>Follow us</strong><br>
+      <a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a>
+      <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+    <div>© 2026 Campus Events Guide</div>
+  </div>
+</footer>
+</body>
+</html>
